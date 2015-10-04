@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7F2-fH-NW5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GY9-Qm-ZFL">
+            <objects>
+                <viewController id="Ap5-bE-3kF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Dq-MP-Icz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sag-mx-Mm0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6AG-IH-mjp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INTRODUCING..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcR-FN-WWQ">
+                                <rect key="frame" x="234" y="98" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JAVI COBO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nU-ZX-2vT">
+                                <rect key="frame" x="256" y="134" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JavierSaltLake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nq0-0N-oQc">
+                                <rect key="frame" x="433" y="519" width="121" height="71"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Javi baby vest.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bsY-5g-oh8">
+                                <rect key="frame" x="234" y="521" width="135" height="71"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="javierMountain.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-IV-wEv">
+                                <rect key="frame" x="46" y="172" width="508" height="316"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGh-DV-GLT" userLabel="javiSFButton">
+                                <rect key="frame" x="46" y="517" width="126" height="73"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hb0-BD-O3O" kind="show" id="gAo-mz-7bA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqs-YV-lNj" userLabel="javiSFButton">
+                                <rect key="frame" x="237" y="521" width="126" height="73"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ToB-vf-fkt" kind="show" id="2Sd-tv-yl8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-Yi-Log" userLabel="javiSFButton">
+                                <rect key="frame" x="430" y="517" width="126" height="73"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JXs-iT-T0p" kind="show" id="Dfc-i3-Pn6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="javierSF.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MC8-Co-jux">
+                                <rect key="frame" x="46" y="517" width="126" height="73"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hXo-qK-DVT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLa-7H-h7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="318"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0YN-92-j6Q">
+            <objects>
+                <viewController id="JXs-iT-T0p" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XaX-el-Pzf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eqj-FS-AN8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rwt-sn-FTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JavierSaltLake.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fL1-Gi-RY6">
+                                <rect key="frame" x="42" y="142" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZF2-TO-0HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646" y="318"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X5x-ey-HtK">
+            <objects>
+                <viewController id="hb0-BD-O3O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKD-WV-zdo"/>
+                        <viewControllerLayoutGuide type="bottom" id="IyA-GX-Beg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tFG-mT-SRV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="javierSF.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LBi-mS-v6b">
+                                <rect key="frame" x="34" y="-73" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sih-un-yZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="1041"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Mo-tk-Su8">
+            <objects>
+                <viewController id="ToB-vf-fkt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tjQ-B0-K4s"/>
+                        <viewControllerLayoutGuide type="bottom" id="QBd-sK-IoX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Imr-a9-JYq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Javi baby vest.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kfc-qE-Pup">
+                                <rect key="frame" x="31" y="-108" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRd-VK-McK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660" y="1014"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L6A-uc-pqr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7F2-fH-NW5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dr2-ie-2c5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ap5-bE-3kF" kind="relationship" relationship="rootViewController" id="7cw-E1-E8C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4DW-Xg-pjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Javi baby vest.jpg" width="1035" height="703"/>
+        <image name="JavierSaltLake.jpg" width="960" height="720"/>
+        <image name="javierMountain.jpg" width="960" height="640"/>
+        <image name="javierSF.jpg" width="960" height="586"/>
+    </resources>
+</document>
