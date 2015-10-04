@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573B90D41BC1948900325DBC /* BeachUseMe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 573B90D31BC1948900325DBC /* BeachUseMe.jpg */; };
+		573B90D61BC1949D00325DBC /* JaviUseMe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 573B90D51BC1949D00325DBC /* JaviUseMe.jpeg */; };
 		5D06C67D19D8CFFE0082F2DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06C67C19D8CFFE0082F2DE /* AppDelegate.swift */; };
 		5D06C67F19D8CFFE0082F2DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06C67E19D8CFFE0082F2DE /* ViewController.swift */; };
 		5D06C68219D8CFFE0082F2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C68019D8CFFE0082F2DE /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		573B90D31BC1948900325DBC /* BeachUseMe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BeachUseMe.jpg; sourceTree = "<group>"; };
+		573B90D51BC1949D00325DBC /* JaviUseMe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JaviUseMe.jpeg; sourceTree = "<group>"; };
 		5D06C67719D8CFFE0082F2DE /* Lesson01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D06C67B19D8CFFE0082F2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D06C67C19D8CFFE0082F2DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		573B90D71BC194D300325DBC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				573B90D51BC1949D00325DBC /* JaviUseMe.jpeg */,
+				573B90D31BC1948900325DBC /* BeachUseMe.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		5D06C66E19D8CFFE0082F2DE = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +90,7 @@
 			children = (
 				5D06C67C19D8CFFE0082F2DE /* AppDelegate.swift */,
 				5D06C67E19D8CFFE0082F2DE /* ViewController.swift */,
+				573B90D71BC194D300325DBC /* Images */,
 				5D06C68019D8CFFE0082F2DE /* Main.storyboard */,
 				5D06C68319D8CFFE0082F2DE /* Images.xcassets */,
 				5D06C67A19D8CFFE0082F2DE /* Supporting Files */,
@@ -190,6 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573B90D61BC1949D00325DBC /* JaviUseMe.jpeg in Resources */,
+				573B90D41BC1948900325DBC /* BeachUseMe.jpg in Resources */,
 				5D06C68219D8CFFE0082F2DE /* Main.storyboard in Resources */,
 				5D06C68419D8CFFE0082F2DE /* Images.xcassets in Resources */,
 			);
