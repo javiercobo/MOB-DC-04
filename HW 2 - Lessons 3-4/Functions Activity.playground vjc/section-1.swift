@@ -5,73 +5,18 @@
 
 // TODO: Write a function that prints out "Hello world!" 10 times
 
-var x = 0
-while (x < 10) {
-print("Hello world!")
-    x = x + 1
-}
-
-
 // TODO: Write a function that prints out "Hit this line {number of iterations of the loop} times!" 20 times
-
-
-var y = 20
-for i in 1...20{
-    print("Hit this line \(y) times")
-    
-}
-
-
 
 // TODO: Write a function that accepts a string as a parameter. Print "Hello {value of string}!"
 
-func simpleHello(z: String){
-    print("Hello \(z)")
-}
-
-simpleHello("monkey")
-
-
-
 // TODO: Write a function accepts a string optional. If the string optional exists, print "Hello {value of string}!". If it doesn't, print "Hello world!"
-
-/*
-func helloWorldOptional(stringValue: String?){
-    print("Hello \(x)")
-    }
-
-helloWorldOptional("Monkey")
-*/
-
 
 // TODO: Write a function that takes one parameter, n, and returns an integer, the nth series in the fibonacci
 // sequence. The first fibonacci number is 0, the second is 1, the third is 1, the fourth is 2, fifth is 3, sixth is 5, etc. fibonacci numbers at sequence n are the sum of the n-1 and n-2 fibonacci number.
 
-/*
-for n in 0...n{
-var fib = 0
-var fib2 = 1
-var fib3 = fib + fib2
-    return (n: Int)
-}
-
-*/
-
-
 // TODO: Write a function that calls the above function in order to print the sum of the first 20 fibonacci numbers.
 
-
-
 // TODO: Write a function that takes in a number and prints out whether it is prime, composite or neither.
-
-let numbers = 1...100
-for number in numbers {
-    if (number == 0)
-    print("This number is not composite or prime.")
-else if (number % 2 != 0)
-    print("This number is composite.")
-}
-
 
 // TODO: Write a function that prints out each of the first 20 fibonacci numbers and whether they are prime. (e.g. 0 is not prime or composite, 1 is prime, etc)
 

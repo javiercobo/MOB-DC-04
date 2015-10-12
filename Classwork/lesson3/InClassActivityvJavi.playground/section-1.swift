@@ -53,22 +53,16 @@ let number = 5
 
 // TODO: Print whether the above number is even
 
-print(number)
-    
-    
-    
-    
-    
-    
-    
-    == 0 {
-    print("This number is even")
-    else ("This number is not even")
+if (number % 2) == 0 {
+    print("Number is even")
+}else {
+    print("Number is not even")
 }
 
 
-
 // TODO: Print out "Hello {whatever the value of name is}, your name is {however long the string name is} characters long!. Use countElements() name.characters.count var name = "Tedi"
+
+
 
 // TODO: Print the sum of one hundred random numbers. Use rand() to generate random numbers.
 
