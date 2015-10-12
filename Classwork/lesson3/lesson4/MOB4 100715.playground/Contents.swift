@@ -45,24 +45,24 @@ print("your first name is \(firstName)")
 print("your last name is \(lastName)")
 }
 
-sayHelloNameAndLastName("Tedi","Konda")
+sayHelloNameAndLastName("Tedi",lastName: "Konda")
 
 // Function that prints out the area of a square/rectangle
 // Function should print "The area is ..."
 
 func getArea(width: Double, height: Double) -> Double{
-    var area = width * height
+    let area = width * height
     print("The area is \(area)")
     return area
 }
 
 
 
-getArea(25, 25)
+getArea(25, height: 25)
 
 
-var mySquare = getArea(25, 25)
-var myRectangle = getArea(25,55)
+var mySquare = getArea(25, height: 25)
+var myRectangle = getArea(25,height: 55)
 
 func displayArea(area: Double) {
     print("The area is \(area)")
