@@ -28,9 +28,19 @@ class fiboAdderClass {
         self.indexNum = 0
     }
     
-    func fibonacciNumberAtIndex(indexOfFibonacciNumber: Int) ->String {for i in 2...indexNum
+    func fibonacciNumberAtIndex(indexOfFibonacciNumber: Int) ->Int
+    
+    
+    {for _ in 2...indexNum {
+        fibo1+fibo2 == fibFinal
+        fibo1 = fibo2
+        fibo2 = fibFinal
+        }
+        return fibFinal
         
         
     }
     
-}
+    }
+    
+

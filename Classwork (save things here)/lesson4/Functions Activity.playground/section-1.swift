@@ -18,7 +18,7 @@ printHelloWorld()
 
 func hitThisLine() {
     for line in 1...20 {
-        print("Hit this line \(line)")
+        print("Hit this line \(line) times.")
     }
 }
 
