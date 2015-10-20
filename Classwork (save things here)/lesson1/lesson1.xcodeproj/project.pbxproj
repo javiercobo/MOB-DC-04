@@ -156,6 +156,7 @@
 		57C7C6E51BBC74C700CFD8BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Cobo, Javier";
 				TargetAttributes = {
@@ -411,6 +412,7 @@
 				57C7C70E1BBC74C700CFD8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57C7C70F1BBC74C700CFD8BA /* Build configuration list for PBXNativeTarget "lesson1Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +421,7 @@
 				57C7C7111BBC74C700CFD8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

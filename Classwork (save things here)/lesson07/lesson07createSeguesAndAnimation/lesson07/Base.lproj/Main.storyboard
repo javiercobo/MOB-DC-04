@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3f-3s-fse">
+                                <rect key="frame" x="180" y="109" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.070486455739999995" blue="0.1066597168" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dmv-PC-y2i" appends="YES" id="fi4-l0-Jgc"/>
+                                    <outletCollection property="gestureRecognizers" destination="wHS-AG-nEH" appends="YES" id="UWh-w6-Jt2"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHA-UK-O7w">
+                                <rect key="frame" x="259" y="314" width="127" height="30"/>
+                                <state key="normal" title="Change view color"/>
+                                <connections>
+                                    <action selector="changeViewBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQ7-b5-AQM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8j-Kl-xpt">
+                                <rect key="frame" x="252" y="46" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6rG-ww-jBD" appends="YES" id="FHb-67-3Yt"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="colorBox" destination="t3f-3s-fse" id="NYz-M8-Ywz"/>
+                        <outlet property="permissionField" destination="L8j-Kl-xpt" id="Hc5-Lh-fsQ"/>
+                        <segue destination="22E-3X-L5T" kind="presentation" identifier="popUpSecondViewSegue" id="YpE-UA-Wyl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="6rG-ww-jBD"/>
+                <swipeGestureRecognizer direction="right" id="dmv-PC-y2i" userLabel="colorViewSwipeRight">
+                    <connections>
+                        <action selector="swipeGestureColorBox:" destination="BYZ-38-t0r" id="we0-yd-I2k"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="wHS-AG-nEH" userLabel="colorViewSwipeLeft">
+                    <connections>
+                        <action selector="swipeLeftColorBox:" destination="BYZ-38-t0r" id="xqH-qb-oNg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="MMm-xH-xbR">
+            <objects>
+                <viewController id="22E-3X-L5T" customClass="ViewController2" customModule="lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X3A-U3-Zrh"/>
+                        <viewControllerLayoutGuide type="bottom" id="LMt-5I-R6B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UDD-tp-uW6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8X-2o-fFL">
+                                <rect key="frame" x="260" y="88" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLd-Tc-aDQ">
+                                <rect key="frame" x="263" y="180" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissModal:" destination="22E-3X-L5T" eventType="touchUpInside" id="rwU-gL-p1l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDD-j5-Og5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="387"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="LTt-dt-aKR">
+            <objects>
+                <viewController id="aVL-jH-Vcd" customClass="ViewController3" customModule="lesson07" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S8H-Ln-Tbc"/>
+                        <viewControllerLayoutGuide type="bottom" id="k7C-uT-Emr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rMF-TS-OZa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlt-lR-bbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="387"/>
+        </scene>
+    </scenes>
+</document>
