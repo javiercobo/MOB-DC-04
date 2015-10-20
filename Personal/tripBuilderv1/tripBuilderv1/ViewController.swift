@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var existingMilesInput: UITextField!
     
+    @IBOutlet weak var calcDollarValue: UILabel!
     
+    @IBOutlet weak var calcResults: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +32,24 @@ class ViewController: UIViewController {
 
 
     @IBAction func calcButton(sender: AnyObject) {
+        let addedEarn = Double(self.earnRateInput.text!)
+        let addedSpend = Double(self.monthlySpendInput.text!)
+        let addedExistingMiles = Double(self.existingMilesInput.text!)
         
-        self.earnRateInput * self.monthlySpendInput 
+        self.calcResults.text = String(12 * Int(addedEarn! * addedSpend!) + Int(addedExistingMiles!))
+        
+        let calcDollars = Double(self.calcResults.text!)
+        
+        self.calcDollarValue.text =
+           String(calcDollars! / 100.00)
     }
+    
+    
+    @IBAction func displayGoal(sender: AnyObject) {
+        self.performSegueWithIdentifier("displayGoalSegue", sender: sender)
+    }
+    
+
     
 }
 
