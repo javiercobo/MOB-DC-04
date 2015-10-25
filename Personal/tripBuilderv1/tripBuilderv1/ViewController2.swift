@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol getEarnRateDelegate {
+    func getEarnRate(rate: Double)
+}
+
 class ViewController2: UIViewController {
     
     /*
@@ -188,13 +192,20 @@ class ViewController2: UIViewController {
     }
     ]
 */
+    
+
+    var depCity = "Washington, DC (DCA)"
+    var arrivalCity = "Chicago, IL ORD"
+    var avgRTFlightCost = 175
+    var imageURL = "http://i.imgur.com/XeGphSu.jpg"
+    
 
     @IBOutlet weak var imageOutlet: UIImageView!
-    @IBOutlet weak var depCity: UILabel!
-    @IBOutlet weak var arrivalCity: UILabel!
-    @IBOutlet weak var avgRTFlightCost: UILabel!
-    @IBOutlet weak var monthsToGoal: UILabel!
-    @IBOutlet weak var estimatedArrivalMonth: UILabel!
+    @IBOutlet weak var depCityOutlet: UILabel!
+    @IBOutlet weak var arrivalCityOutlet: UILabel!
+    @IBOutlet weak var avgRTFlightCostOutlet: UILabel!
+    @IBOutlet weak var monthsToGoalLabel: UILabel!
+    @IBOutlet weak var estimatedArrivalMonthLabel: UILabel!
     
     
     
@@ -209,6 +220,7 @@ class ViewController2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
 
     /*
     // MARK: - Navigation

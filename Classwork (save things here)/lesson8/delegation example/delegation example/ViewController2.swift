@@ -4,7 +4,9 @@
 //
 //  Created by Cobo, Javier on 10/21/15.
 //  Copyright © 2015 Cobo, Javier. All rights reserved.
-//
+// 
+
+// This screen is passing information to the other screen. Input here, appear there.  This screen is the delegating object.
 
 import UIKit
 
