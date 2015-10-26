@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Player {
-    
+struct Player {
+    var cards: [Int]
 }

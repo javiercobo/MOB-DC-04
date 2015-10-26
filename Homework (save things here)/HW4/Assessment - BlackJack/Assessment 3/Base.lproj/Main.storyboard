@@ -19,9 +19,32 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLj-XE-fcY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-4y-yme">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="DEAL!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="213" height="100"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="dealButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2fH-sX-gwh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="2cO-4y-yme"/>
+                                    </mask>
+                                </variation>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="94" y="462" width="213" height="100"/>
+                                    <mask key="subviews">
+                                        <include reference="2cO-4y-yme"/>
+                                    </mask>
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlackJack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBz-Tp-YFE">
@@ -122,31 +145,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBI-Wc-uo2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aov-wa-PiS">
-                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="14" y="41" width="52" height="30"/>
-                                        </variation>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="Aov-wa-PiS"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="35" y="235" width="81" height="128"/>
-                                    <mask key="subviews">
-                                        <include reference="Aov-wa-PiS"/>
-                                    </mask>
-                                </variation>
-                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-ix-2bg">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -222,31 +220,22 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1o8-dT-Ve6">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="124-HN-a90">
-                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="14" y="41" width="52" height="30"/>
-                                        </variation>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="124-HN-a90"/>
-                                    </mask>
-                                </variation>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2PC-V4-kxP">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="295" y="235" width="81" height="128"/>
-                                    <mask key="subviews">
-                                        <include reference="124-HN-a90"/>
-                                    </mask>
+                                    <rect key="frame" x="43" y="301" width="97" height="30"/>
                                 </variation>
-                            </view>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRV-YR-cKX">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="267" y="301" width="97" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -259,13 +248,13 @@
                                 <exclude reference="Rm9-sk-DZQ"/>
                                 <exclude reference="jMD-gs-tOv"/>
                                 <exclude reference="3L0-dh-AyC"/>
-                                <exclude reference="hBI-Wc-uo2"/>
                                 <exclude reference="C9E-ix-2bg"/>
                                 <exclude reference="edY-M7-7UO"/>
                                 <exclude reference="N2F-9Z-eZD"/>
                                 <exclude reference="qSS-qk-jyQ"/>
                                 <exclude reference="6Cp-0h-8co"/>
-                                <exclude reference="1o8-dT-Ve6"/>
+                                <exclude reference="2PC-V4-kxP"/>
+                                <exclude reference="TRV-YR-cKX"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -278,21 +267,26 @@
                                 <include reference="Rm9-sk-DZQ"/>
                                 <include reference="jMD-gs-tOv"/>
                                 <include reference="3L0-dh-AyC"/>
-                                <include reference="hBI-Wc-uo2"/>
                                 <include reference="C9E-ix-2bg"/>
                                 <include reference="edY-M7-7UO"/>
                                 <include reference="N2F-9Z-eZD"/>
                                 <include reference="qSS-qk-jyQ"/>
                                 <include reference="6Cp-0h-8co"/>
-                                <include reference="1o8-dT-Ve6"/>
+                                <include reference="2PC-V4-kxP"/>
+                                <include reference="TRV-YR-cKX"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="kye-4f-Ber"/>
                     <connections>
-                        <outlet property="cpuCard1" destination="aSz-cv-pFW" id="MfI-oA-YhE"/>
-                        <outlet property="playerCard1" destination="gzS-06-rq0" id="41W-Mr-D1e"/>
-                        <outlet property="playerCard2" destination="TkX-hU-XJK" id="LAW-wv-KxS"/>
+                        <outlet property="cpuArrayOutlet" destination="TRV-YR-cKX" id="iWd-8N-kjb"/>
+                        <outlet property="cpuCard1Outlet" destination="aSz-cv-pFW" id="ihE-sp-ToX"/>
+                        <outlet property="cpuCard2Outlet" destination="Cbx-i2-gcs" id="a5A-ak-gK0"/>
+                        <outlet property="cpuScoreOutlet" destination="N2F-9Z-eZD" id="6rd-Bx-2sj"/>
+                        <outlet property="playerArrayOutlet" destination="2PC-V4-kxP" id="gnC-EG-D0a"/>
+                        <outlet property="playerCard1Outlet" destination="gzS-06-rq0" id="uHe-lf-qOC"/>
+                        <outlet property="playerCard2Outlet" destination="TkX-hU-XJK" id="B8v-pP-dQb"/>
+                        <outlet property="playerScoreOutlet" destination="C9E-ix-2bg" id="sUN-2v-ge6"/>
                         <outlet property="redBox" destination="VLj-XE-fcY" id="Vv1-Uh-GQ7"/>
                     </connections>
                 </viewController>

@@ -10,11 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var playerCard1: UITextField!
-    @IBOutlet weak var playerCard2: UITextField!
-    @IBOutlet weak var cpuCard1: UITextField!
+    
+    @IBOutlet weak var playerCard1Outlet: UITextField!
+    @IBOutlet weak var playerCard2Outlet: UITextField!
+    @IBOutlet weak var cpuCard1Outlet: UITextField!
+    @IBOutlet weak var cpuCard2Outlet: UITextField!
+    @IBOutlet weak var playerScoreOutlet: UITextField!
+    @IBOutlet weak var cpuScoreOutlet: UITextField!
+    @IBOutlet weak var playerArrayOutlet: UITextField!
+    @IBOutlet weak var cpuArrayOutlet: UITextField!
     
     
+    var game = CardGame()
+    var playerCard1 = Int()
+    var playerCard2 = Int()
+    var cpuCard1 = Int()
+    var cpuCard2 = Int()
+    var playerArray = [Int]()
+    var cpuArray = [Int]()
+    
+
+    
+
     
     // BlackJack game: Create a a game of Blackjack
     // ************* Baseline requirements:
@@ -40,8 +57,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var redBox: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.game.firstHand()
+        
+        playerCard1 = self.game.human.cards[0]
+        playerCard2 = self.game.human.cards[1]
+        cpuCard1 = self.game.cpu.cards[0]
+        cpuCard2 = self.game.cpu.cards[1]
+        self.playerCard1Outlet.text = String(playerCard1)
+        self.cpuCard1Outlet.text = String(cpuCard1)
+        self.playerCard2Outlet.text = String(playerCard2)
+        self.cpuCard2Outlet.text = String(cpuCard2)
+        self.playerScoreOutlet.text = String(playerCard1 + playerCard2)
+        self.cpuScoreOutlet.text = String(cpuCard1 + cpuCard2)
+        self.playerArrayOutlet.text = String(playerCard1) + " , " + String(playerCard2)
+        self.cpuArrayOutlet.text = String(cpuCard1) + " , " + String(cpuCard2)
     }
 
+    
+    @IBAction func dealButton(sender: AnyObject) {
+        func deal(){
+            
+        }
+        self.playerArrayOutlet.text = String(playerCard1) + " , " + String(playerCard2) + " , " + String(self.game.deal)
+    
+    }
 
 }
 
