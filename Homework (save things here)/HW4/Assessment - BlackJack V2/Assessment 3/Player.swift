@@ -11,3 +11,7 @@ import Foundation
 struct Player {
     var cards: [Int]
 }
+
+struct Computer {
+    var score: Int
+}

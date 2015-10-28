@@ -18,8 +18,9 @@ class ViewController: UIViewController {
     var game = CardGame()
     var playerCard1 = Int()
     var playerCard2 = Int()
-    var playerArray = [String]()
+    var playerArray = [Int]()
     var playerScore = Int()
+    var cpuScore = Int()
     
     
     
@@ -48,27 +49,76 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBOutlet weak var winnerLabel: UILabel!
 
     @IBAction func newGameButton(sender: AnyObject) {
+        self.winnerLabel.text = "Who's gonna win?"
+        playerScore = 0
+        self.game.human.cards = []
+        self.playerCardsOutlet.text = ""
+        playerArray = []
+        self.cpuScoreOutlet.text = ""
+        
         self.game.firstHand()
         print(self.game.human.cards)
         playerCard1 = self.game.human.cards[0]
         playerCard2 = self.game.human.cards[1]
-        playerArray = [String(playerCard1) + ", " + String(playerCard2)]
-        self.playerCardsOutlet.text = String(playerArray)
+        playerArray.append(playerCard1)
+        playerArray.append(playerCard2)
+        self.playerCardsOutlet.text = prettyPrint(playerArray)
         playerScore = playerCard1 + playerCard2
         self.playerScoreOutlet.text = String(playerScore)
+        game.cpuGetHand()
     }
     
+    func prettyPrint(cardHand:[Int]) -> String {
+        var output = ""
+        for i in 0..<cardHand.count {
+            //deal to human
+            output += String(cardHand[i]) + " | "
+        }
+        return output
+    }
+    
+
     @IBAction func dealButton(sender: AnyObject) {
+            if playerScore <= 21 {
         self.game.deal()
         print(self.game.human.cards)
         //cardArray is my card deck
-        let newCardValue = game.human.cards[game.human.cards.count]
-        let totalScore = playerScore + newCardValue
-        self.playerScoreOutlet.text = String(totalScore)
+        let newCardValue = game.human.cards[(game.human.cards.count-1)]
+        playerScore += newCardValue
+        self.playerScoreOutlet.text = String(playerScore)
+        self.playerCardsOutlet.text = prettyPrint(game.human.cards)
+        if playerScore > 21 {
+            self.winnerLabel.text = "GAME OVER, YOU LOSE!"
+            
+            let cpuScore = game.cpu.score
+            self.cpuScoreOutlet.text = String(cpuScore)
+        }
+        }
 
     }
+    
+    @IBAction func holdCardsSwipe(sender: AnyObject) {
+        cpuScore = game.cpu.score
+        self.cpuScoreOutlet.text = String(cpuScore)
+        if cpuScore > playerScore {
+            self.winnerLabel.text = "GAME OVER, YOU LOSE!"
+        }
+        if cpuScore < playerScore {
+            self.winnerLabel.text =
+            "You win!!"
+            
+        }
+        if cpuScore == playerScore {
+            self.winnerLabel.text =
+            "It's a tie."
+            
+        }
+    }
+    
     
 
 }
