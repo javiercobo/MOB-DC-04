@@ -200,7 +200,7 @@ extension ViewController: UITextFieldDelegate {
 
 extension ViewController: UIImagePickerControllerDelegate {
   func imagePickerController(picker: UIImagePickerController,
-    didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    didFinishPickingMediaWithInfo info: [String : AnyObject]) {
       let selectedPhoto = info[UIImagePickerControllerOriginalImage] as! UIImage
       let scaledImage = scaleImage(selectedPhoto, maxDimension: 640)
       
