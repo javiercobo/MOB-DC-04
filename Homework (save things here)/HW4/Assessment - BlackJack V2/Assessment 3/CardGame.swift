@@ -40,6 +40,7 @@ class CardGame {
 
     }
     
+
     func firstHand() -> Int {
         var tempCard = 0
         var cpuHand = 0

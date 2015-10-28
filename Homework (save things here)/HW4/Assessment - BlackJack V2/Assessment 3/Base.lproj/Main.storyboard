@@ -19,34 +19,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLj-XE-fcY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhY-1B-bs6">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <gestureRecognizers/>
-                                        <state key="normal" title="Deal">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="213" height="100"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="dealButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pk0-CD-ZLt"/>
-                                            <outletCollection property="gestureRecognizers" destination="gLE-dW-I5G" appends="YES" id="DdL-q0-M9H"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="EhY-1B-bs6"/>
-                                    </mask>
-                                </variation>
+                                <gestureRecognizers/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="94" y="415" width="213" height="100"/>
-                                    <mask key="subviews">
-                                        <include reference="EhY-1B-bs6"/>
-                                    </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bhx-Zj-ETI" appends="YES" id="vhm-WM-40r"/>
+                                    <outletCollection property="gestureRecognizers" destination="GNW-SX-zN2" appends="YES" id="wv2-Y8-coj"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlackJack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBz-Tp-YFE">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -182,9 +163,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="gLE-dW-I5G">
+                <tapGestureRecognizer numberOfTapsRequired="2" id="bhx-Zj-ETI">
                     <connections>
-                        <action selector="holdCardsSwipe:" destination="vXZ-lx-hvc" id="cFP-kL-tEM"/>
+                        <action selector="dealDoubleTap:" destination="vXZ-lx-hvc" id="pDM-iB-UKS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="GNW-SX-zN2">
+                    <connections>
+                        <action selector="holdCardsRightSwip:" destination="vXZ-lx-hvc" id="Vhq-cp-tCe"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>

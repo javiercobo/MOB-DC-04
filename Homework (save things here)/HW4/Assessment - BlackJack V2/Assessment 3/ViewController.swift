@@ -52,14 +52,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var winnerLabel: UILabel!
 
-    @IBAction func newGameButton(sender: AnyObject) {
+    func clearGame() {
         self.winnerLabel.text = "Who's gonna win?"
         playerScore = 0
         self.game.human.cards = []
         self.playerCardsOutlet.text = ""
         playerArray = []
         self.cpuScoreOutlet.text = ""
-        
+    }
+    
+    
+    @IBAction func newGameButton(sender: AnyObject) {
+        clearGame()
         self.game.firstHand()
         print(self.game.human.cards)
         playerCard1 = self.game.human.cards[0]
@@ -81,27 +85,29 @@ class ViewController: UIViewController {
         return output
     }
     
-
-    @IBAction func dealButton(sender: AnyObject) {
-            if playerScore <= 21 {
-        self.game.deal()
-        print(self.game.human.cards)
-        //cardArray is my card deck
-        let newCardValue = game.human.cards[(game.human.cards.count-1)]
-        playerScore += newCardValue
-        self.playerScoreOutlet.text = String(playerScore)
-        self.playerCardsOutlet.text = prettyPrint(game.human.cards)
-        if playerScore > 21 {
-            self.winnerLabel.text = "GAME OVER, YOU LOSE!"
-            
-            let cpuScore = game.cpu.score
-            self.cpuScoreOutlet.text = String(cpuScore)
-        }
-        }
+    @IBAction func dealDoubleTap(sender: AnyObject) {
+        
+        if playerScore <= 21 {
+            self.game.deal()
+            print(self.game.human.cards)
+            //cardArray is my card deck
+            let newCardValue = game.human.cards[(game.human.cards.count-1)]
+            playerScore += newCardValue
+            self.playerScoreOutlet.text = String(playerScore)
+            self.playerCardsOutlet.text = prettyPrint(game.human.cards)
+            if playerScore > 21 {
+                self.winnerLabel.text = "GAME OVER, YOU LOSE!"
+                
+                let cpuScore = game.cpu.score
+                self.cpuScoreOutlet.text = String(cpuScore)
+            }
 
     }
-    
-    @IBAction func holdCardsSwipe(sender: AnyObject) {
+
+    }
+
+    @IBAction func holdCardsRightSwip(sender: AnyObject) {
+        
         cpuScore = game.cpu.score
         self.cpuScoreOutlet.text = String(cpuScore)
         if cpuScore > playerScore {
@@ -117,9 +123,8 @@ class ViewController: UIViewController {
             "It's a tie."
             
         }
+
     }
-    
-    
+
 
 }
-
