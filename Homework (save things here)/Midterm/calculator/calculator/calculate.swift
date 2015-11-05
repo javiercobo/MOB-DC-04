@@ -8,10 +8,31 @@
 
 import Foundation
 
-class Caculate {
+class Calculate {
     
-    var inputOne = Int()
-    var inputTwo = Int()
+    var displayedValue = String()
+    var savedValue = Float()
+    var math = String()
 
+    func numberPressed(number: String) -> String {
+        
+        
+        
+        if displayedValue == String(0) {
+            displayedValue = String(number)
+        }
+        else {
+            
+            displayedValue = displayedValue + String(number)
+        }
+        return displayedValue
+        
+    }
     
+    func equation(oper: String) -> String {
+        return "hello"
+    }
+
+
+
 }

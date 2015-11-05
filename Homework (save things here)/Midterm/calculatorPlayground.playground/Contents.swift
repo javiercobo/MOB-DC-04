@@ -20,6 +20,13 @@ let stringRepresentation = array.joinWithSeparator("-")
 
 stringRepresentation
 
+numberDisplay: UILabel
+
+
+self.numberDisplay.text
+
+
+
 
 
 
