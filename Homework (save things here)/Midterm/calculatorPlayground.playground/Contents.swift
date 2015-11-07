@@ -7,23 +7,11 @@ var str = "Hello, playground"
 1+1
 String(1+1)
 
-var numbersEntered: [Int] = [1,2]
+var x = 9
 
-numbersEntered
+var y = -x
 
-
-
-var string: String = "+="
-
-var array = ["1", "2", "3"]
-let stringRepresentation = array.joinWithSeparator("-")
-
-stringRepresentation
-
-numberDisplay: UILabel
-
-
-self.numberDisplay.text
+x + y
 
 
 
