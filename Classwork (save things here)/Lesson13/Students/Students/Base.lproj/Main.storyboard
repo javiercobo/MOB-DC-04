@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Students" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tK-R4-T0J">
+                                <rect key="frame" x="255" y="141" width="63" height="30"/>
+                                <state key="normal" title="Save Info"/>
+                                <connections>
+                                    <action selector="sendData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1s-J0-aiB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VC8-Pn-qva">
+                                <rect key="frame" x="244" y="58" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGg-HC-t3l">
+                                <rect key="frame" x="263" y="237" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ONj-xw-Hg4">
+                                <rect key="frame" x="244" y="103" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LP9-Z4-L9n">
+                                <rect key="frame" x="33" y="310" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e59-PQ-pqe">
+                                <rect key="frame" x="348" y="359" width="74" height="30"/>
+                                <state key="normal" title="Save Story"/>
+                                <connections>
+                                    <action selector="saveStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzG-hy-A6u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i5-tj-5Cf">
+                                <rect key="frame" x="348" y="419" width="75" height="30"/>
+                                <state key="normal" title="Load Story"/>
+                                <connections>
+                                    <action selector="loadStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GzA-0C-rv1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ONj-xw-Hg4" firstAttribute="centerX" secondItem="VC8-Pn-qva" secondAttribute="centerX" id="3HW-Mr-ayg"/>
+                            <constraint firstItem="8tK-R4-T0J" firstAttribute="top" secondItem="ONj-xw-Hg4" secondAttribute="bottom" constant="8" id="3rG-Ww-kkX"/>
+                            <constraint firstItem="8tK-R4-T0J" firstAttribute="centerX" secondItem="ONj-xw-Hg4" secondAttribute="centerX" id="NEL-kG-r8i"/>
+                            <constraint firstItem="BGg-HC-t3l" firstAttribute="centerX" secondItem="8tK-R4-T0J" secondAttribute="centerX" id="Tmq-3H-zWb"/>
+                            <constraint firstItem="VC8-Pn-qva" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VMa-zX-ZUU"/>
+                            <constraint firstItem="ONj-xw-Hg4" firstAttribute="top" secondItem="VC8-Pn-qva" secondAttribute="bottom" constant="15" id="WJ5-KR-ZzQ"/>
+                            <constraint firstItem="LP9-Z4-L9n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="b7p-8g-32A"/>
+                            <constraint firstItem="LP9-Z4-L9n" firstAttribute="top" secondItem="BGg-HC-t3l" secondAttribute="bottom" constant="52" id="bzz-eJ-RbJ"/>
+                            <constraint firstItem="VC8-Pn-qva" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="fAV-Vc-Mvh"/>
+                            <constraint firstItem="BGg-HC-t3l" firstAttribute="top" secondItem="8tK-R4-T0J" secondAttribute="bottom" constant="66" id="hO7-kL-vgU"/>
+                            <constraint firstItem="1i5-tj-5Cf" firstAttribute="leading" secondItem="LP9-Z4-L9n" secondAttribute="trailing" constant="75" id="hmS-y3-3Br"/>
+                            <constraint firstItem="1i5-tj-5Cf" firstAttribute="top" secondItem="e59-PQ-pqe" secondAttribute="bottom" constant="30" id="msG-ES-YV9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="keyField" destination="VC8-Pn-qva" id="D0Q-SU-fA2"/>
+                        <outlet property="labelOutput" destination="BGg-HC-t3l" id="QDk-ai-4LM"/>
+                        <outlet property="storyText" destination="LP9-Z4-L9n" id="hT5-LW-dKK"/>
+                        <outlet property="textInput" destination="VC8-Pn-qva" id="ltb-u7-rHo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qkk-Fg-99n">
+            <objects>
+                <viewController id="tP5-mt-btd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eOF-CC-yJH"/>
+                        <viewControllerLayoutGuide type="bottom" id="yiz-EQ-laL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZwG-Zg-dR0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezs-x8-49n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

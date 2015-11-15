@@ -20,9 +20,11 @@ class ViewController: UIViewController {
     var secondNumber: Double = 0
     var operation = ""
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        drawDisplay()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +32,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func drawDisplay(){
+
+        self.numberDisplay.translatesAutoresizingMaskIntoConstraints = false
+        
+        _ = NSLayoutConstraint(
+            item: self.numberDisplay,
+            attribute: NSLayoutAttribute.Height,
+            relatedBy: NSLayoutRelation.Equal,
+            toItem: self.view,
+            attribute: NSLayoutAttribute.Height,
+            multiplier: 0.25,
+            constant: 0)
+    }
+    
     @IBAction func numberPressed(sender: AnyObject) {
         if operatorWasTyped == true {
             let secondNumber = calc.numberPressed(sender.currentTitle!!)
