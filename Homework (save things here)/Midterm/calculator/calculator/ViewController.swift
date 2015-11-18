@@ -60,28 +60,6 @@ class ViewController: UIViewController {
       
         }
         
-        
-            
-    @IBAction func operatorPressed(sender: AnyObject) {
-        if self.clearWasTyped == false {
-        firstNumber = Double(self.numberDisplay.text!)!
-        operatorWasTyped = true
-        self.operation = sender.currentTitle!!
-        self.calc.displayedValue = ""
-        }else {
-            self.numberDisplay.text = String(firstNumber)
-            operatorWasTyped = true
-            self.operation = sender.currentTitle!!
-            self.calc.displayedValue = ""
-            clearWasTyped = false
-        }
-
-
-    }
-
-    
-    
-
     @IBAction func equalsPressed(sender: AnyObject) {
         var result: Double = 0
         secondNumber = Double(self.numberDisplay.text!)!
@@ -101,7 +79,24 @@ class ViewController: UIViewController {
         self.firstNumber = result
         self.numberDisplay.text = String(result)
     }
-   
+    
+    @IBAction func operatorPressed(sender: AnyObject) {
+        if self.clearWasTyped == false {
+            firstNumber = Double(self.numberDisplay.text!)!
+            operatorWasTyped = true
+            self.operation = sender.currentTitle!!
+            self.calc.displayedValue = ""
+        }else {
+            self.numberDisplay.text = String(firstNumber)
+            operatorWasTyped = true
+            self.operation = sender.currentTitle!!
+            self.calc.displayedValue = ""
+            clearWasTyped = false
+    }
+        
+/*
+    
+    
     @IBAction func clear(sender: AnyObject) {
         calc.displayedValue = "0"
         self.numberDisplay.text = calc.displayedValue
@@ -125,5 +120,6 @@ class ViewController: UIViewController {
         let invert: Double = -(Double(self.numberDisplay.text!)!)
         self.numberDisplay.text = String(invert)
     }
+*/
 }
-
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Automatic">
+    <entity name="StudentList" representedClassName=".Student" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scholarship" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="year_enrolled" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="StudentList" positionX="-54" positionY="-9" width="128" height="105"/>
+    </elements>
+</model>

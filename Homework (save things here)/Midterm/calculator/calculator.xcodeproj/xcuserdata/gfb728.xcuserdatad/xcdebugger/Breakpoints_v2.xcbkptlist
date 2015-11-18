@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "calculator/ViewController.swift"
-            timestampString = "468849597.603113"
+            timestampString = "469554783.69014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "equalsPressed(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
