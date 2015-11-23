@@ -80,6 +80,30 @@ class ViewController: UIViewController {
         self.numberDisplay.text = String(result)
     }
     
+    @IBAction func clear(sender: AnyObject) {
+        calc.displayedValue = "0"
+        self.numberDisplay.text = calc.displayedValue
+        clearWasTyped = true
+    }
+    
+    
+    @IBAction func AC(sender: AnyObject) {
+        firstNumber = 0
+        calc.displayedValue = "0"
+        self.numberDisplay.text = calc.displayedValue
+    }
+    
+    @IBAction func percent(sender: AnyObject) {
+        let percentNumber: Double = Double(self.numberDisplay.text!)!/100
+        self.numberDisplay.text = String(percentNumber)
+        
+    }
+    
+    @IBAction func inverter(sender: AnyObject) {
+        let invert: Double = -(Double(self.numberDisplay.text!)!)
+        self.numberDisplay.text = String(invert)
+    }
+    
     @IBAction func operatorPressed(sender: AnyObject) {
         if self.clearWasTyped == false {
             firstNumber = Double(self.numberDisplay.text!)!
@@ -93,33 +117,8 @@ class ViewController: UIViewController {
             self.calc.displayedValue = ""
             clearWasTyped = false
     }
-        
-/*
-    
-    
-    @IBAction func clear(sender: AnyObject) {
-        calc.displayedValue = "0"
-        self.numberDisplay.text = calc.displayedValue
-        clearWasTyped = true
-    }
-    
-    @IBAction func allClear(sender: AnyObject) {
-        firstNumber = 0
-        calc.displayedValue = "0"
-        self.numberDisplay.text = calc.displayedValue
-        
-    }
 
-    @IBAction func percent(sender: AnyObject) {
-        let percentNumber: Double = Double(self.numberDisplay.text!)!/100
-        self.numberDisplay.text = String(percentNumber)
-        
-    }
-   
-    @IBAction func inverter(sender: AnyObject) {
-        let invert: Double = -(Double(self.numberDisplay.text!)!)
-        self.numberDisplay.text = String(invert)
-    }
-*/
+
+
 }
 }
