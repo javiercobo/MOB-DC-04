@@ -1,0 +1,10 @@
+PODS:
+  - EZSwipeController (0.2)
+
+DEPENDENCIES:
+  - EZSwipeController
+
+SPEC CHECKSUMS:
+  EZSwipeController: c419b9edbecd44f666bc39b7b617bbdb5ffd3bc7
+
+COCOAPODS: 0.39.0
