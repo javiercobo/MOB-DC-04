@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.mapOutlet.mapType = MKMapType.Hybrid
+        
+        let initialLocation = CLLocation(latitude: 38.9048540, longitude: -77.0338120)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
